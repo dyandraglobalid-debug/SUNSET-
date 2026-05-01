@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunset di Kebun 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('crowd.jpg') center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom, rgba(0,150,255,0.7), rgba(0,0,0,0.85));
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+animation:fadeIn 1.5s ease-in-out;
+}
+
+.hero img{
+width:280px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:800;
+letter-spacing:2px;
+}
+
+.cities{
+margin-top:40px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.city{
+transition:0.4s;
+cursor:pointer;
+}
+
+.city img{
+width:160px;
+}
+
+.city:hover{
+transform:scale(1.1);
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#00d4ff;
+color:black;
+font-weight:600;
+border-radius:50px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTION */
+section{
+padding:100px 20px;
+text-align:center;
+}
+
+section h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+max-width:500px;
+margin:20px auto;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:32px;}
+.city img{width:120px;}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+
+<img src="logo-event.png" alt="Logo Event">
+
+<h1>SUNSET DI KEBUN 2026</h1>
+
+<div class="cities">
+<a href="#bogor" class="city">
+<img src="bogor.png" alt="Bogor">
+</a>
+
+<a href="#jakarta" class="city">
+<img src="jakarta.png" alt="Jakarta">
+</a>
+
+<a href="#bali" class="city">
+<img src="bali.png" alt="Bali">
+</a>
+</div>
+
+<a href="#tickets" class="btn">Buy Tickets</a>
+
+</div>
+</div>
+
+<!-- BOGOR -->
+<section id="bogor">
+<h2>Kebun Raya Bogor</h2>
+<div class="card">
+<p>Experience magical sunset vibes di Kebun Raya Bogor bersama line up terbaik 2026.</p>
+<a href="#tickets" class="btn">Beli Tiket Bogor</a>
+</div>
+</section>
+
+<!-- JAKARTA -->
+<section id="jakarta" style="background:#111827;">
+<h2>Kebun Raya Jakarta</h2>
+<div class="card">
+<p>Festival terbesar di Jakarta dengan konsep alam & music sunset.</p>
+<a href="#tickets" class="btn">Beli Tiket Jakarta</a>
+</div>
+</section>
+
+<!-- BALI -->
+<section id="bali">
+<h2>Kebun Raya Bali</h2>
+<div class="card">
+<p>Rasakan experience sunset paling aesthetic di Bali.</p>
+<a href="#tickets" class="btn">Beli Tiket Bali</a>
+</div>
+</section>
+
+<!-- TICKETS -->
+<section id="tickets" style="background:#111827;">
+<h2>Tickets 2026</h2>
+<div class="card">
+<h3>Presale</h3>
+<p>Mulai dari Rp100.000</p>
+<a href="#" class="btn">Checkout Sekarang</a>
+</div>
+</section>
+
+</body>
+</html>
